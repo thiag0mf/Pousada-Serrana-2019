@@ -1,0 +1,26 @@
+@import '../_includes/bootstrap/bootstrap.scss';
+//@include media-breakpoint-down(md) 
+
+@import 'fonts.scss';
+body{
+    background-image: url('./../_images/_background/bright_light.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+}
+
+$curvaturaBorda: 1.8rem;
+
+#inputName{
+    border-radius: $curvaturaBorda 0rem $curvaturaBorda 0rem;
+}
+
+#inputPassword{
+    border-radius: $curvaturaBorda 0rem 0rem 0rem;
+}
+
+#toggle-password-view{
+    border-radius: 0rem 0rem $curvaturaBorda 0rem;
+}

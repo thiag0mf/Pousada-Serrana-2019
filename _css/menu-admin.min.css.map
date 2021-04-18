@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,qBAAqB,AAAA,CACjB,gBAAgB,CAAE,OAAO,CAAA,UAAU,CACtC,AACD,AAAA,MAAM,AAAA,CACF,KAAK,CAAE,KAAK,CACf",
+    "sources": [
+        "../_scss/menu-admin.scss"
+    ],
+    "names": [],
+    "file": "menu-admin.min.css"
+}

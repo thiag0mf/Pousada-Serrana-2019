@@ -1,0 +1,22 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "pousada-02",
+
+    "liveSassCompile.settings.formats": [
+        // This is Default.
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/_css/"
+        },
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/_css/expanded/"
+        }
+    ],
+
+    "liveSassCompile.settings.includeItems": [
+        "_scss/*.scss"
+    ],
+    "files.autoSave": "afterDelay"
+}

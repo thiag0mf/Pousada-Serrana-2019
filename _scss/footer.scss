@@ -1,0 +1,73 @@
+.footer{
+    background-color: #232323;
+    width: 100%;
+    z-index: 3;
+    position: relative;
+    color: white !important;
+
+    h5{
+
+    }
+
+    ul{
+        li{
+            text-decoration: none;
+            list-style-type: none;
+            line-height: 1.5;
+            min-height: 50px !important;
+            .text, span, a{
+                display: table-cell;
+                vertical-align: top;
+                text-decoration: none;
+            }
+
+            .icon{
+                background: transparent;
+                width: 40px;
+                font-size: 18px;
+                padding-top: 2px;
+                display: table-cell;
+                vertical-align: top;   
+            }
+
+            span{
+                min-height: 50px !important;
+            }
+        }
+
+        li > .text{
+            color: white;
+        }
+
+        li > a{
+            color: rgba(255, 255, 255, 0.7);
+            min-height: 50px !important;
+        }
+
+        li > a:hover{
+            color: white;
+            transition: 0.2s;   
+        }
+
+        li > span > a{
+            color: rgba(255, 255, 255, 0.7);
+            min-height: 50px !important;
+        }
+
+        li > span > a:hover{
+            color: white;
+            transition: 0.2s;   
+        }
+
+        li > a > span{
+            height: 60px !important;
+        }
+
+        .socicon-booking{
+            font-size: 16px !important;
+            padding-left: 2px !important;
+        }
+
+    }
+
+}

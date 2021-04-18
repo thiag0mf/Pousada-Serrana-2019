@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,EAAE,cAAc,CAAA;EAC3B,QAAQ,EAAE,QAAQ,CAAA,UAAU;CAC/B;;AAED,AAAA,uBAAuB,CAAA;EACnB,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "../../_scss/animation-admin.scss"
+    ],
+    "names": [],
+    "file": "animation-admin.css"
+}

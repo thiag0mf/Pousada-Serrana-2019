@@ -1,0 +1,70 @@
+//Variables
+$navPadding: 60px;
+$navPaddingY: 5px;
+// $mainColor: rgba(123, 98, 51, 1);
+$mainColor: rgb(112, 86, 37);
+
+
+.style-nav{
+    padding: 0 !important;
+    padding-right: $navPadding !important;
+    padding-left: $navPadding !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    font-size: 0.90em !important;
+    padding-top: $navPaddingY !important;
+    padding-bottom: $navPaddingY !important;
+    color: $mainColor;
+}  
+
+.transparent{
+    background-color: transparent !important;
+    position: absolute;
+    padding: 25px !important;
+    padding-right: $navPadding !important;
+    padding-left: $navPadding !important;
+    font-size: 0.90em !important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: white !important;
+}
+
+.navbar-light{
+    background-color: $mainColor !important;
+}
+
+.logo{
+    height: 40px;
+}
+
+.nav-item{
+    padding-right: 20px !important;
+    cursor: pointer;
+}
+
+.nav-link{
+    opacity: 0.5;
+}
+
+.itens-color{
+    color: $mainColor;
+}
+
+#home{
+    opacity: 1;
+}
+
+//Responsive tags
+@media screen and (max-width: 450px){
+    .style-nav{
+        padding-right: 20px !important;
+        padding-left: 20px !important;
+    }
+}

@@ -1,0 +1,413 @@
+@import '../_includes/bootstrap/bootstrap.scss';
+//@include media-breakpoint-down(md) 
+
+@import 'fonts.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+$mainColor: rgb(112, 86, 37);
+$transparentSection: rgba(0, 0, 0, 0.5); 
+//$acomodacoesIconColor: #153be2;
+//$acomodacoesIconColor: #18d26e;
+$acomodacoesIconColor: #129951;
+//$acomodacoesIconColor: #000;
+//$acomodacoesIconColor: rgb(112, 86, 37);
+
+#pousada{
+    //height: 5000px;
+    color: $mainColor;
+    font-family: $mainFont !important;
+    overflow-x: hidden;
+}
+
+.modal-body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.modal-body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.modal-body::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+h1, h2, h3, h4, h5, h6, span{
+    font-family: $titlesFont !important;
+}
+
+.navbar-toggler{
+    //border-color: white !important;
+    fill: white;
+}
+
+.navbar-toggler-icon{ 
+    fill: white;
+    color: white !important;
+
+}
+
+.background-image{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center center !important;
+    top: 0;
+
+    #titleImg{
+        color: white;
+        font-size: 7em;
+        text-align: center;
+        display: none;
+        font-family: 'Dancing Script', cursive !important;
+        display: none;
+
+        @include media-breakpoint-down(md){
+            font-size: 5em;
+        }
+    }
+
+    .subtitleImg{
+        color: rgba(255, 255, 255, 0.658);
+        text-align: center;
+        font-size: 2em;
+        text-transform: uppercase;
+        display: none;
+
+        @include media-breakpoint-down(md){
+            font-size: 1em;
+        }
+    }
+}
+
+.content{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+    .reserva{
+        display: block;
+        position: relative;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+
+        .card{
+            
+        }
+    }
+
+        #reserva{
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 500;
+            
+        }
+
+
+        .btn-check{
+            background-color: $mainColor; 
+            color: white;
+
+            &:hover{
+                color: white;
+                background-color: darken($mainColor, 7);
+                transition: 0.3s;
+            }
+        }
+
+        .title-holder{
+
+            .titleSection{
+                width: 100%;
+                font-size: 26px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 200;
+                color: $mainColor;
+                display: inline-block;
+                position: relative;
+                text-align: center !important;
+                margin-top: 0;
+                line-height: 1.5;
+                color: black !important;
+            
+            &:before, &:after{
+                    width: 100px;
+                    height: 2px;
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    background: #8d703b;
+                    content: '';
+                    box-sizing: border-box;
+            }
+            &:before{
+                width: 80px;
+                height: 2px;
+                bottom: -19px;
+            }
+        }
+    }
+        
+
+    .apresentacao{
+       width: 100%;
+       background-color: $transparentSection !important;
+       color: white !important;
+       display: inline-block;
+       
+       [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+           font-size: 4em !important;   
+           color: $mainColor; 
+           margin-left: 0px !important;
+       }
+    }
+    
+
+.icon{
+    line-height: 1.3;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #f6f2ea;
+    border-radius: 50%;
+}
+
+.reserva .card, .acomodacoes .card{
+    transition: .3s;
+    color: $mainColor;
+
+    &:hover{
+        transform: scale(1.05) !important; 
+        transition: .3s !important;
+        
+        // transform: rotateY(360deg);
+        // transition: 2s;
+        
+        // transform:  !important;
+        // transition: .3s !important;
+    }
+            
+    .border-left{
+        border-left: 3px solid $acomodacoesIconColor !important;
+    }
+
+    .card-title{
+    color: black !important;
+}
+        
+}
+
+
+
+section:nth-child(even){
+    background-color: #fff;
+}
+
+section:nth-child(odd){
+    background-color: #f8f7f7;
+}
+
+.border-left{
+    border-left: 3px solid $acomodacoesIconColor !important;
+}
+
+.acomodacoes{
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after{
+        font-size: 1.5em !important;   
+        color: $acomodacoesIconColor; 
+        margin-left: 0px !important;
+    }
+
+    .card{
+        
+        .row{
+            
+            cursor: pointer;
+        }
+    
+        .row:hover{
+            transition: .3s;
+            background-color: #eee !important;
+        }
+
+        .border-bottom{
+            border-bottom-color: #ddd !important;
+        }
+        
+        .border-top{
+            border-top-color:  #ddd !important;
+        }
+
+        .border-left{
+            border-left: 3px solid $acomodacoesIconColor !important;
+        }
+    }
+
+        .media{
+            text-align: center !important;
+    
+        }
+
+        .media-body{
+            p{
+                // color: black !important;
+                font-size: .80em !important;
+            }
+        }
+
+}
+
+.localizacao{
+    background-color: $transparentSection !important;
+    color: white !important; 
+    
+    .localization-box{
+        //background-color: blue;
+        width: 100%;
+        height: 100%;
+
+        .map{
+            width: 500px;
+            height: 500px;
+        }
+    }
+}
+
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    margin-top: 0px;
+}
+
+.subheading{
+    line-height: 1.8;
+    font-weight: 400;
+    color: rgb(206, 206, 206);
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-size: 38px;
+    font-weight: 400;
+    position: relative;
+    line-height: 1.5;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Playfair Display", Arial, serif;
+}
+
+.box-animation{
+    font-size: 0.8em !important;
+}
+
+.close-item{
+    cursor: pointer;
+    &:hover{
+        color: #666;
+        transition: 0.4s;
+    }
+}
+
+
+#modal-content01{
+    color: $mainColor !important;
+}
+
+
+.bg-gray{
+    background-color: #ccc !important;
+}
+
+.titleSection{
+    width: 100%;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: white !important;
+    display: inline-block;
+    position: relative;
+    text-align: center !important;
+    margin-top: 0;
+    line-height: 1.5;
+            
+    &:before, &:after{
+        width: 100px;
+        height: 2px;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background: var(--warning);
+        content: '';
+        box-sizing: border-box;
+    }
+    &:before{
+        width: 80px;
+        height: 2px;
+        bottom: -19px;
+    }
+}
+
+
+
+.animationSlideTop{
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.animationSlideRight{
+    opacity: 0;
+    margin-left: -350px;
+}
+
+.animationSlideLeft{
+    opacity: 0;
+    margin-left: 350px;
+}
+
+.animationBouncy{
+    opacity: 0;
+}
+
+@keyframes bouncing{
+    0%{
+        opacity: 0;
+        margin-top: 300px;
+    }
+    35%{   
+        margin-top: -40px;
+    }
+    50%{
+        margin-top: 30px;
+    }
+    65%{
+        margin-top: -15px;
+    }
+    83%{
+        margin-top: 10px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
